@@ -19,7 +19,7 @@ private static final Logger log = LoggerFactory.getLogger(ConsumeRestAPI.class);
 		return builder.build();
 	}
 	
-
+   //consume API
 	public CommandLineRunner run(RestTemplate restTemplate) throws Exception{
 		return args -> {
 			 LabelCollection collection = restTemplate.getForObject("http://eacodingtest.digital.energyaustralia.com.au/api/v1/festivals", LabelCollection.class);
